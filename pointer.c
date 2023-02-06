@@ -1,4 +1,4 @@
-/*
+
 #include<stdio.h>
 int main(){
     int *ptr;
@@ -7,8 +7,10 @@ int main(){
     *ptr=9;
     printf("%d",*ptr+1);
     return 0;
-}*/
-/*
+}
+
+.......................................
+
 #include<stdio.h>
 int main(){
     int x,y,temp;
@@ -21,8 +23,9 @@ int main(){
     printf("after swap x=%d,y=%d",x,y);
     return 10;
 }
-*/
-/*
+
+     ...............................................
+
 #include<stdio.h>
 void swap (int *x,int *y){
     int temp;
@@ -39,7 +42,10 @@ int main(){
     swap(&x,&y);
      printf("after swap x=%d,y=%d",x,y);
     return 10;
-}*/
+}
+
+.........................................................
+
 #include<stdio.h>
 //void display_array_elements(int n,int array[]){
 void display_array_elements(int n,int *ptr){
@@ -53,3 +59,27 @@ int main(){
     display_array_elements(n, my_array);
     return 0;
 }
+ 
+............................................
+ 
+#include<stdio.h>
+int GCD(int x,int y){
+    if(x%y==0)
+    return y;
+    else{
+        GCD(y,x%y);
+    }
+}
+int main(){
+    int x,y,temp;
+    scanf("%d%d",&x,&y);
+    if(y>x){
+        temp=x;
+        x=y;
+        y=temp;
+    }
+    printf("%d",GCD(x,y));
+}
+
+
+
