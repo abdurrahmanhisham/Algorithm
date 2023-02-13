@@ -34,3 +34,23 @@ void insertionsort(int arr[],int n)
         }
     }
     
+........................................................
+    
+    
+    #include<stdio.h>
+int main()
+{
+    int A;
+    scanf("%d",&A);
+    int a[A];
+    int p,q;
+    scanf("%d%d",&p,&q);
+    for(int i=0;i<A;i++){
+        scanf("%d",&a[i]);
+    }
+    for(int B=p;B<=q;B++){
+        if(a[B]%4==0)
+        printf("%d ",a[B]);
+    }
+    return 0;
+}
