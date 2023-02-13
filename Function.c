@@ -22,3 +22,4 @@ int main(){
     scanf("%d",&n);
     printf("%d",sum(n));
 }
+  
